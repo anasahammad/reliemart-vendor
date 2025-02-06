@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  transition: 0.2s;
+    scrollbar-width: thin;
+    scrollbar-color: #8a2be2 #f1f1f1;
+  
+}
+.dashboard > .active {
+  background: rgba(0, 10, 27, 0.74) !important;
+  color: white !important;
+}
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
+/* .swiper-pagination {
+  margin-bottom: -20px !important;
+} */
+.swiper-pagination-bullet-active {
+  background: #0056b3 !important;
+}
+
+.scroll-animation {
+  animation: animationTimeline;
+  animation-timeline: view();
+}
+
+@keyframes animationTimeline {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  12% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* Webkit browsers (Chrome, Safari, newer versions of Opera) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8a2be2;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6a1cb7;
+}
+
+/* Firefox */
+
+
+/* For Internet Explorer and Edge */
+/* body {
+  scrollbar-face-color: #8a2be2;
+  scrollbar-track-color: #f1f1f1;
+  scrollbar-arrow-color: #8a2be2;
+  scrollbar-shadow-color: #8a2be2;
+} */
