@@ -9,7 +9,7 @@ export default function AdminDashboardHeader({ handleCallNav }) {
   const [callNotifiction, setCallNotifiction] = useState(false);
   return (
     <div className="relative">
-    <div className="w-full h-[60px]  p-3 px-5 flex shadow-md justify-between items-center border-b  bg-gradient-to-br from-purple-100 to-indigo-100">
+    <div className="w-full h-[60px]  p-3 px-5 flex shadow-md justify-between items-center border-b  bg-[#223344] text-white">
       <div className="flex justify-start items-center">
         <span
           onClick={() => handleCallNav(true)}
@@ -17,7 +17,7 @@ export default function AdminDashboardHeader({ handleCallNav }) {
         >
           <IoReorderFourSharp />
         </span>
-        <Link target="_blank" to="https://relifemart.com/" className=" font-semibold text-gray-600 hidden md:block">
+        <Link target="_blank" to="https://relifemart.com/" className=" font-semibold  hidden md:block">
           Customer Ui
         </Link>
       </div>
